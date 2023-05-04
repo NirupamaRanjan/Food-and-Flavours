@@ -1,7 +1,3 @@
-import React  from "react";
-import ResCard from "./ResCard";
-import './body'
-
 const resData= {
     "data": {
       "type": "seeAllRestaurants",
@@ -2312,17 +2308,5 @@ const resData= {
     }
 }
 
-const finalResData=resData.data.data.cards
 
-const Body=()=>(
-    <div className="body">
-      {finalResData.map(res=>{
-          const data=res.data
-          console.log("res.data",res.data)
-          return <ResCard key={data.id} restaurant={data}/>
-      })}
-    </div>
-  
-)
-
-export default Body;
+export default resData;

@@ -1,22 +1,15 @@
 import React from "react";
+import { LOGO_URL } from "../../utils/constants";
 import "./header.css"
 
 
-// Header
-//   -Logo 
-//     -Image
-//     -CompanyName
-//  -Nav Items 
-//     -About us 
-//     -Contact us
-//     -Cart
 
-const Header=()=>(
+const  Header=()=>(
     <div className="header-cont"> 
 
         <div className="logo-cont">
         <img alt="Logo" className="logo-img"
-        src="https://icon2.cleanpng.com/20180331/ezq/kisspng-catering-food-computer-icons-logo-event-management-catering-5abf487c5eb658.714031151522485372388.jpg"></img>
+        src={LOGO_URL}></img>
         <h3 className="comp-name">Foods &amp; Flavours</h3>
         </div>
 
