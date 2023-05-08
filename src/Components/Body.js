@@ -7,6 +7,7 @@ import resData from "../../utils/restData";
 const Body=()=>{
   const finalResData=resData.data.data.cards;
   const [renderedData,setRenderedData]=useState(finalResData)
+  
 
   const getTopRatedRes=()=>{
     let filteredData=finalResData.filter(res=> res.data.avgRating>=4)
